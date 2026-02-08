@@ -40,7 +40,6 @@ The output JAR will be in `target/`.
 
 By contributing, you agree that your contributions will be licensed under the **GPL v3** license (see [LICENSE](LICENSE)).
 
-## Upstream
+## Acknowledgments
 
-This is a fork of [hneemann/Digital](https://github.com/hneemann/Digital).  
-Upstream changes may be merged periodically.
+Digital Dark builds upon [hneemann/Digital](https://github.com/hneemann/Digital) by Helmut Neemann.

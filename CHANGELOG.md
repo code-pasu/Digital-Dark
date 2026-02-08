@@ -1,6 +1,8 @@
 # Changelog — Digital Dark
 
-All notable changes from the [upstream Digital](https://github.com/hneemann/Digital) are documented here.
+All notable changes to this project are documented here.
+
+This project builds upon [hneemann/Digital](https://github.com/hneemann/Digital). The entries below describe what Digital Dark adds.
 
 ## [1.0.0] — 2026-02-08
 

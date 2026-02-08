@@ -3,12 +3,11 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Java 8+](https://img.shields.io/badge/Java-8%2B-orange.svg)](https://adoptium.net/)
 
-A modern, dark-themed fork of [hneemann's Digital](https://github.com/hneemann/Digital) — an easy-to-use digital logic designer and circuit simulator for education.
-
+A modern, dark-themed digital logic designer and circuit simulator for education. Built on [Helmut Neemann's Digital](https://github.com/hneemann/Digital), reimagined with a sleek dark UI, vibrant component colors, and quality-of-life improvements.
 
 ---
 
-## What's New in This Fork
+## ✨ Features
 
 ### 🌙 Dark Mode (Always On)
 - Custom Metal L&F theme with a carefully tuned dark palette
@@ -35,9 +34,25 @@ A modern, dark-themed fork of [hneemann's Digital](https://github.com/hneemann/D
 - **Edit → Settings → Component Label Font Size**
 - Choose from 6–48pt, live preview without restart
 
-### 🖱️ Modern Toolbar
+### 🖱️ Shift-Click Multi-Select
+- Hold **Shift** and click components/wires to select multiple items
+- Delete all selected items at once
+
+### 🎛️ Modern Toolbar
 - Flat, dark toolbar with hover effects
+- Tooltips display keyboard shortcuts
 - Styled status bar
+
+### 📦 Full Simulator Features (Inherited from Digital)
+- Signal visualization with measurement graphs
+- Combinatorial and sequential circuit analysis/synthesis
+- Test case editor and runner
+- 74xx series IC library & generic (parameterized) circuits
+- VHDL/Verilog export and simulation
+- FPGA support (BASYS3, TinyFPGA BX)
+- GAL16v8 / GAL22v10 JEDEC export
+- Remote TCP interface for assembler IDEs
+- Custom Java components via JAR plugins
 
 ---
 
@@ -51,7 +66,7 @@ A modern, dark-themed fork of [hneemann's Digital](https://github.com/hneemann/D
 ### Requirements
 - **Java 8** or later — [Download Eclipse Temurin](https://adoptium.net/)
 
-### From Source
+### Build from Source
 ```bash
 git clone https://github.com/code-pasu/Digital-Dark.git
 cd Digital-Dark
@@ -100,26 +115,8 @@ The output JAR is at `target/Digital.jar`.
 
 ## Credits & License
 
-- **Original author:** [Helmut Neemann](https://github.com/hneemann) — [Digital](https://github.com/hneemann/Digital)
+- **Based on:** [Digital](https://github.com/hneemann/Digital) by [Helmut Neemann](https://github.com/hneemann)
+- **Dark theme & UI enhancements by:** [code-pasu](https://github.com/code-pasu)
 - **License:** [GNU General Public License v3.0](LICENSE)
-- **This fork** adds dark mode UI, modern styling, and UX enhancements
 
-This is a modified version of Digital. Per GPL v3, all source code is provided and the original license is preserved.
-
----
-
-## Upstream Features (Inherited)
-
-All features from the original Digital are preserved:
-
-- Signal visualization with measurement graphs
-- Single gate mode for oscillation analysis
-- Combinatorial and sequential circuit analysis/synthesis
-- Test case editor and runner
-- 74xx series IC library
-- Generic (parameterized) circuits
-- VHDL/Verilog export and simulation
-- FPGA support (BASYS3, TinyFPGA BX)
-- GAL16v8 / GAL22v10 JEDEC export
-- Remote TCP interface for assembler IDEs
-- Custom Java components via JAR plugins
+This project builds upon the original Digital simulator. Per GPL v3, all source code is provided and the original license is preserved. See [NOTICE.md](NOTICE.md) for full attribution.

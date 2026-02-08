@@ -40,9 +40,9 @@ public class DigitalUncaughtExceptionHandler implements Thread.UncaughtException
     private void writeLog(BufferedWriter w, Thread thread, Throwable throwable) throws IOException {
         w.write("This file was created because there was an unexpected exception in Digital.");
         w.newLine();
-        w.write("Please send this file to digital-simulator@web.de or create an issue at");
+        w.write("Please create an issue at");
         w.newLine();
-        w.write("GitHub: https://github.com/hneemann/Digital/issues");
+        w.write("GitHub: https://github.com/code-pasu/Digital-Dark/issues");
         w.newLine();
         w.newLine();
         w.write("Manifest: ");

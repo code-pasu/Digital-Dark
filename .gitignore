@@ -1,0 +1,33 @@
+# Build output
+target/
+*.class
+*.jar
+!release/Digital.jar
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+nbproject/
+nbactions.xml
+
+# OS
+desktop.ini
+ehthumbs.db
+
+# Logs
+*.log

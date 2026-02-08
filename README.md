@@ -69,9 +69,7 @@ A modern, dark-themed digital logic designer and circuit simulator for education
 ### Build from Source
 ```bash
 git clone https://github.com/code-pasu/Digital-Dark.git
-cd Digital-Dark
-mvn package -Pno-git-rev -Dcheckstyle.skip=true -Denforcer.skip=true -DskipTests
-java -jar target/Digital.jar
+
 ```
 
 ---

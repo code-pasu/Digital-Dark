@@ -27,12 +27,6 @@ All notable changes from the [upstream Digital](https://github.com/hneemann/Digi
 - **Wire dots** — Now use signal-state colors during simulation
 - **Main.java** — Integrated all new features: F2 search, toolbar button, settings wiring, menu items
 
-### Removed
-- Light mode toggle from View menu (dark mode is always active)
 
-### Fixed
-- JPopupMenu in autocomplete was consuming left-clicks on the circuit canvas (replaced with JWindow)
-- Table dialog cells had white backgrounds in dark mode
-- Karnaugh map had hardcoded white/black/gray colors
-- Component dropdown icons were 75px (too large) — now scaled to 24px
-- Pin connection dots stayed brown during simulation — now change with signal state
+
+

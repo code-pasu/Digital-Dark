@@ -5,7 +5,6 @@
 
 A modern, dark-themed fork of [hneemann's Digital](https://github.com/hneemann/Digital) — an easy-to-use digital logic designer and circuit simulator for education.
 
-![Dark Mode Screenshot](screenshots/dark-mode.png)
 
 ---
 
@@ -54,7 +53,7 @@ A modern, dark-themed fork of [hneemann's Digital](https://github.com/hneemann/D
 
 ### From Source
 ```bash
-git clone https://github.com/YOUR_USERNAME/Digital-Dark.git
+git clone https://github.com/code-pasu/Digital-Dark.git
 cd Digital-Dark
 mvn package -Pno-git-rev -Dcheckstyle.skip=true -Denforcer.skip=true -DskipTests
 java -jar target/Digital.jar

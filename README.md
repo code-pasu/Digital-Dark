@@ -97,19 +97,6 @@ Digital-Dark/
 
 ---
 
-## Building
-
-```bash
-# Full build (requires Maven 3.x + JDK 8+)
-mvn package -Pno-git-rev -Dcheckstyle.skip=true -Denforcer.skip=true
-
-# Quick build (skip tests)
-mvn package -Pno-git-rev -Dcheckstyle.skip=true -Denforcer.skip=true -DskipTests
-```
-
-The output JAR is at `target/Digital.jar`.
-
----
 
 ## Credits & License
 

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Digital Dark
+Comment=Easy-to-use digital logic designer and circuit simulator
+Exec=AppRun %f
+Icon=digital-dark
+Categories=Education;Electronics;
+MimeType=text/x-digital;
+Terminal=false
+Keywords=simulator;digital;circuits;logic;

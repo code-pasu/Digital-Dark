@@ -63,13 +63,45 @@ A modern, dark-themed digital logic designer and circuit simulator for education
 2. Unzip the `Digital-Dark.zip`
 3. Double-click `Digital.exe` (or run `java -jar Digital.jar`)
 
+### Linux AppImage
+1. Download the `Digital-Dark-x86_64.AppImage` artifact from the AppImage build workflow (or a release asset if attached).
+2. Make it executable and run it:
+   ```bash
+   chmod +x Digital-Dark-x86_64.AppImage
+   ./Digital-Dark-x86_64.AppImage
+   ```
+3. To inspect contents without launching the GUI:
+   ```bash
+   ./Digital-Dark-x86_64.AppImage --appimage-extract
+   ```
+
 ### Requirements
-- **Java 8** or later — [Download Eclipse Temurin](https://adoptium.net/)
+- **Java 8** or later (only for running the JAR/ZIP distribution) — [Download Eclipse Temurin](https://adoptium.net/)
 
 ### Build from Source
 ```bash
 git clone https://github.com/code-pasu/Digital-Dark.git
+cd Digital-Dark
+mvn clean install
+```
 
+### Build AppImage Locally (Linux)
+The AppImage build uses the existing Maven distribution build and bundles a Java runtime with `jlink`, so no project-specific JDK installation is required on the target machine.
+
+Required tools on the build machine:
+- JDK 17+ (must provide `jlink`)
+- Maven
+- `unzip`
+- `curl` (only needed the first time to download `appimagetool`)
+
+Build command:
+```bash
+distribution/linux/build-appimage.sh
+```
+
+Output:
+```text
+target/Digital-Dark-x86_64.AppImage
 ```
 
 ---

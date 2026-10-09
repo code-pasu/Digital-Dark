@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+APP_HOME="${HERE}/usr/lib/digital"
+JAVA_HOME="${HERE}/usr/lib/runtime"
+
+cd "${APP_HOME}"
+export JAVA_TOOL_OPTIONS='-Djava.awt.headless=false'
+exec "${JAVA_HOME}/bin/java" -jar "${APP_HOME}/Digital.jar" "$@"

@@ -1,0 +1,41 @@
+name: Build Linux AppImage
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  appimage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Temurin JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Install Linux packaging dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y unzip desktop-file-utils
+
+      - name: Build AppImage
+        run: distribution/linux/build-appimage.sh
+
+      - name: Validate desktop entry
+        run: desktop-file-validate target/AppDir/digital-dark.desktop
+
+      - name: Upload AppImage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: digital-dark-appimage
+          path: target/Digital-Dark-x86_64.AppImage
+          if-no-files-found: error
